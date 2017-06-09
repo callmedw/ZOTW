@@ -14,18 +14,22 @@ import { Animal } from './animal.model';
     {{currentAnimal.sex}},
     {{currentAnimal.likes}},
     {{currentAnimal.dislikes}}
-    <button (click)="editAnimalButtonClicked(currentAnimal)">Edit!</button></li>
+    <button (click)="editAnimalButtonClicked(currentAnimal)">Edit Info</button></li>
   </ul>
-
   `
 })
 
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
+  @Output() clickAddSender = new EventEmitter();
 
 
   editAnimalButtonClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
+  }
+
+  addAnimalButtonClicked() {
+    this.clickAddSender.emit();
   }
 }
