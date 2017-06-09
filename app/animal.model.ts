@@ -7,5 +7,5 @@ export class Animal {
   public caretakers: number,
   public sex: string,
   public likes: string,
-  pubic dislikes: string) {}
+  public dislikes: string) {}
 }
