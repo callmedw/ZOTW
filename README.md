@@ -9,8 +9,8 @@
 * I want to click an animal to edit its name, age or caretakers.
 
 ### Setup/Installation Requirements
-- [ ] clone <link to repo>
-- [ ] <local repo>
+- [ ] clone https://github.com/callmedw/ZOTW.git
+- [ ] navigate to the project's directory
 - [ ] run this series of commands:
   * `$ npm install`
   * `$ bower install`
@@ -22,6 +22,7 @@
 * CSS
 * Angular
 * JavaScript
+* Typescript
 
 ### Known Bugs
 List known bugs or issues here
@@ -31,6 +32,3 @@ Dana Weiss
 
 ### License
 *open source GPL & MIT*
-
-
-

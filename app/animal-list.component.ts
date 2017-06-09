@@ -20,13 +20,11 @@ import { Animal } from './animal.model';
     <button (click)="editAnimalButtonClicked(currentAnimal)">Edit Info</button></li>
   </ul>
   <br>
-
   <h3>View animals by age:</h3>
   <select (change)="onChange($event.target.value)">
     <option value="youngAnimals" selected="selected">View Young Animals</option>
     <option value="matureAnimals">View Mature Animals</option>
   </select>
-
   <ul>
     <li *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAnimalAge">
     {{currentAnimal.name}},
@@ -48,7 +46,6 @@ export class AnimalListComponent {
   @Output() clickSender = new EventEmitter();
   @Output() clickAddSender = new EventEmitter();
   filterByAnimalAge: string = "youngAnimals"
-
 
   onChange(dropdownOptionSelected) {
     this.filterByAnimalAge = dropdownOptionSelected;
