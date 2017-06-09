@@ -1,0 +1,28 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #4A0001;
+  color: #000000;
+}
+
+.jumbotron {
+  background-image: url("https://tinyurl.com/ycmgonl9");
+  text-align: center;
+  height: 446px;
+  width: 902px;
+}
+
+h1 {
+  font-family: "HCo Verlag",CenturyGothic,AppleGothic,Gill Sans,Gill Sans MT,sans-serif;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  font-size: 90px;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.container {
+  width: 75%;
+  margin-left: auto;
+}

@@ -5,9 +5,25 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
 
+  <h3>See all animals currently at the Zoo</h3>
+  <ul>
+    <li *ngFor="let currentAnimal of childAnimalList">
+    {{currentAnimal.name}},
+    {{currentAnimal.species}}
+    {{currentAnimal.age}},
+    {{currentAnimal.diet}},
+    {{currentAnimal.location}},
+    {{currentAnimal.caretakers}},
+    {{currentAnimal.sex}},
+    {{currentAnimal.likes}},
+    {{currentAnimal.dislikes}}
+    <button (click)="editAnimalButtonClicked(currentAnimal)">Edit Info</button></li>
+  </ul>
+  <br>
+
+  <h3>View animals by age:</h3>
   <select (change)="onChange($event.target.value)">
-    <option value="allAnimals" selected="selected">See All Animals</option>
-    <option value="youngAnimals">View Young Animals</option>
+    <option value="youngAnimals" selected="selected">View Young Animals</option>
     <option value="matureAnimals">View Mature Animals</option>
   </select>
 
@@ -22,8 +38,8 @@ import { Animal } from './animal.model';
     {{currentAnimal.sex}},
     {{currentAnimal.likes}},
     {{currentAnimal.dislikes}}
-    <button (click)="editAnimalButtonClicked(currentAnimal)">Edit Info</button></li>
   </ul>
+  <br>
   `
 })
 
