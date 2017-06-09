@@ -13,7 +13,6 @@ import { Animal } from './animal.model';
   `
 })
 
-
 export class AppComponent {
   masterAnimalList: Animal[] = [
     new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud Noises'),

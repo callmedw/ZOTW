@@ -4,10 +4,9 @@ import { Animal } from './animal.model';
 @Pipe({
   name: "animalAge",
   pure: false
-
 })
 
-export class animalAgePipe implements PipeTransform {
+export class AnimalAgePipe implements PipeTransform {
   transform(input: Animal[], ageOfAnimal) {
     var output: Animal[] = [];
     if(ageOfAnimal === "youngAnimals") {

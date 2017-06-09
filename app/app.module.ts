@@ -22,4 +22,5 @@ import { AnimalAgePipe } from './animal-age.pipe';
   bootstrap: [
     AppComponent ]
 })
+
 export class AppModule { }
