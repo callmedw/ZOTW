@@ -7,7 +7,7 @@ import { Animal } from './animal.model';
     <div class="container">
       <h1>Zoo Of The Wild</h1>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-      <edit-animal></edit-animal>
+      <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
     </div>
   `
 })
@@ -19,8 +19,14 @@ export class AppComponent {
     new Animal('Ocelot', 'Prince', 4, 'Carnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in the sunshine', 'Toys that are not rope-based'),
   ];
 
-  editAnimal() {
-    console.log("yup");
+  selectedAnimal: Animal = null;
+
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
   }
 
 
