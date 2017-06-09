@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AnimalListComponent } from './animal-list.component';
 import { EditAnimalComponent } from './edit-animal.component';
+import { NewAnimalComponent } from './new-animal.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { EditAnimalComponent } from './edit-animal.component';
   declarations: [
     AppComponent,
     AnimalListComponent,
-    EditAnimalComponent
+    EditAnimalComponent,
+    NewAnimalComponent,
   ],
   bootstrap: [
     AppComponent ]
