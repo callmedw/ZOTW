@@ -14,7 +14,7 @@ import { Animal } from './animal.model';
     {{currentAnimal.sex}},
     {{currentAnimal.likes}},
     {{currentAnimal.dislikes}}
-    <button (click)="editAnimal()">Edit!</button></li>
+    <button (click)="editAnimalButtonClicked(currentAnimal)">Edit!</button></li>
   </ul>
 
   `
@@ -25,7 +25,7 @@ export class AnimalListComponent {
   @Output() clickSender = new EventEmitter();
 
 
-  editAnimal() {
-    console.log("yup");
+  editAnimalButtonClicked(animalToEdit: Animal) {
+    this.clickSender.emit(animalToEdit);
   }
 }
