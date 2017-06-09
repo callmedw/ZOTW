@@ -1,0 +1,21 @@
+{
+  "name": "Zoo-Of-The-Wild",
+  "authors": [
+    "Dana Weiss <mynameisdanaweiss@gmail.com>"
+  ],
+  "description": "an application to track animals at the local zoo",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
