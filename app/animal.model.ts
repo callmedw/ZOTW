@@ -1,6 +1,7 @@
 export class Animal {
-  constructor(public species: string,
+  constructor(
   public name: string,
+  public species: string,
   public age: number,
   public diet: string,
   public location: string,

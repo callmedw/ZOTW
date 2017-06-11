@@ -10,6 +10,7 @@ import { Animal } from './animal.model';
       </div>
       <div class="box">
         <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+        <br>
         <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)" (clickDeleteSender)="deleteAnimal($event)"></animal-list>
         <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
       </div>
@@ -20,8 +21,9 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   masterAnimalList: Animal[] = [
-    new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud Noises', 'http://elelur.com/data_images/mammals/arctic-fox/arctic-fox-02.jpg'),
-    new Animal('Ocelot', 'Prince', 4, 'Carnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in the sunshine', 'Toys that are not rope-based', 'http://felid-tag.org/wp-content/uploads/2014/03/ocelot2-Dan-Bodenstein1.jpg'),
+    new Animal('Moon', 'Arctic Fox', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud Noises', 'http://elelur.com/data_images/mammals/arctic-fox/arctic-fox-02.jpg'),
+    new Animal('Prince', 'Ocelot', 4, 'Carnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in the sunshine', 'Toys that are not rope-based', 'http://felid-tag.org/wp-content/uploads/2014/03/ocelot2-Dan-Bodenstein1.jpg'),
+    new Animal('Friendly', 'Cabybara', 2, 'Herbivore', 'Southern Swamp', 3, 'Female', 'Sunny Naps', 'Being Alone', 'http://www.rainforest-alliance.org/sites/default/files/styles/750w_585h/public/2016-09/capybara.jpg?itok=XHdneBUA'),
   ];
   selectedAnimal: Animal = null;
   chosenAnimal: Animal;

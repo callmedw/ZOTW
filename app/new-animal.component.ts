@@ -46,9 +46,10 @@ import { Animal } from './animal.model';
         <label>Image:</label>
         <input class="form-control" #newImage>
       </div>
-      <button (click)='showAddForm()' class="btn"  (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newImage.value);
+      <button class="btn" (click)='showAddForm()' class="btn"  (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newImage.value);
       newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value=''; newImage.value='';">Add this Animal</button>
     </div>
+    <br>
   `
 })
 

@@ -1,14 +1,20 @@
+html {
+  background-color: #000000;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #4A0001;
+  background-color: #000000;
   color: #000000;
 }
 
 .jumbotron {
+  margin: auto;
   background-image: url("https://tinyurl.com/ycmgonl9");
   text-align: center;
   height: 446px;
   width: 902px;
+  background-color: #000000;
 }
 
 .jumbotron h1 {
@@ -18,24 +24,28 @@ body {
   text-transform: uppercase;
   word-spacing: 3px;
   color: #000000;
-  font-size: 90px;
-  margin-top: -5;
+  font-size: 76px;
+  margin-top: 290px;
+  text-shadow: 2px 2px #ff8e00;
 }
 
 .container {
-  width: 75%;
-  margin-left: auto;
+  border-radius: 2px;
+  background-color: #4A0001;
 }
 
 .box {
-  background-color: #B40001;
+  background-color: #9A0000;
+  border-radius: 10px;
+  padding: 20px;
   width: 80%;
   margin: auto;
+  width: 902px;
 }
 
-.profile-pic {
+.profile-pic, img {
   width: 150px;
-  height: auto;
+  height: 100px;
 }
 
 table {
@@ -46,9 +56,8 @@ table {
   border-spacing: 5px;
   border-collapse: collapse;
   text-align: center;
-  box-shadow: 1px 1px 1px #999;
-
 }
+
 table th {
   height: 35px;
   text-align: center;
@@ -57,4 +66,26 @@ table th {
 table td {
   height: 45px;
   text-align: center;
+}
+
+.select {
+  appearance: none
+}
+
+button {
+  background-color: #000000;
+  color: #EA0000;
+}
+
+.addForm {
+  padding: auto;
+  margin: auto;
+  width: 50%;
+}
+
+.col-md-3:hover {
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1,1.1);
+  z-index: 1001;
+  cursor: pointer;
 }

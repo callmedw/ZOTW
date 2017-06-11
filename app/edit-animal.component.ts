@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'edit-animal',
   template: `
-    <div *ngIf="childSelectedAnimal">
+    <div *ngIf="childSelectedAnimal" class="addForm">
       <h3>Edit {{childSelectedAnimal.name}} the {{childSelectedAnimal.species}}</h3>
       <div class="form-group">
         <label>Name:</label>
@@ -48,6 +48,7 @@ import { Animal } from './animal.model';
       </div>
         <button class="btn" (click)="doneButtonClicked()">Done</button>
     </div>
+    <br>
   `
 })
 
