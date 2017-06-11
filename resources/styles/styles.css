@@ -37,3 +37,24 @@ body {
   width: 150px;
   height: auto;
 }
+
+table {
+  height: 555px;
+  margin: 5px;
+  padding: auto;
+  width: 200px;
+  border-spacing: 5px;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 1px 1px 1px #999;
+
+}
+table th {
+  height: 35px;
+  text-align: center;
+}
+
+table td {
+  height: 45px;
+  text-align: center;
+}
