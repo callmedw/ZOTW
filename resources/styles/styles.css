@@ -32,3 +32,8 @@ body {
   width: 80%;
   margin: auto;
 }
+
+.profile-pic {
+  width: 150px;
+  height: auto;
+}

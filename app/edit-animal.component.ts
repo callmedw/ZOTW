@@ -42,6 +42,10 @@ import { Animal } from './animal.model';
         <label>Dislikes:</label>
         <input class="form-control" [(ngModel)]="childSelectedAnimal.dislikes">
       </div>
+      <div class="form-group">
+        <label>Image URL:</label>
+        <input class="form-control" [(ngModel)]="childSelectedAnimal.image">
+      </div>
         <button class="btn" (click)="doneButtonClicked()">Done</button>
     </div>
   `

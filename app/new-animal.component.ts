@@ -42,8 +42,12 @@ import { Animal } from './animal.model';
         <label>Dislikes:</label>
         <input class="form-control" #newDislikes>
       </div>
-      <button (click)='showAddForm()' class="btn"  (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value);
-      newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';">Add this Animal</button>
+      <div class="form-group">
+        <label>Image:</label>
+        <input class="form-control" #newImage>
+      </div>
+      <button (click)='showAddForm()' class="btn"  (click)="submitForm(newName.value, newSpecies.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value, newImage.value);
+      newName.value=''; newSpecies.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value=''; newImage.value='';">Add this Animal</button>
     </div>
   `
 })
@@ -53,8 +57,8 @@ export class NewAnimalComponent {
   @Output() doneAddClickedSender = new EventEmitter();
   addForm: boolean = false;
 
-  submitForm(name: string, species: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string) {
-    var newAnimaltoAdd: Animal = new Animal(name, species, age, diet, location, caretakers, sex, likes, dislikes);
+  submitForm(name: string, species: string, age: number, diet: string, location: string, caretakers: number, sex: string, likes: string, dislikes: string, image: string) {
+    var newAnimaltoAdd: Animal = new Animal(name, species, age, diet, location, caretakers, sex, likes, dislikes, image);
     this.newAnimalSender.emit(newAnimaltoAdd);
     this.doneAddClickedSender.emit();
   }

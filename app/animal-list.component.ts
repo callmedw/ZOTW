@@ -8,6 +8,7 @@ import { Animal } from './animal.model';
   <h3>See all animals currently at the Zoo</h3>
   <ul>
     <li *ngFor="let currentAnimal of childAnimalList">
+    <img class ="profile-pic" src="{{currentAnimal.image}}">
     {{currentAnimal.name}},
     {{currentAnimal.species}}
     {{currentAnimal.age}},
@@ -27,6 +28,7 @@ import { Animal } from './animal.model';
   </select>
   <ul>
     <li *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAnimalAge">
+    <img class ="profile-pic" src="{{currentAnimal.image}}">
     {{currentAnimal.name}},
     {{currentAnimal.species}}
     {{currentAnimal.age}},

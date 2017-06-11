@@ -20,8 +20,8 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   masterAnimalList: Animal[] = [
-    new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud Noises'),
-    new Animal('Ocelot', 'Prince', 4, 'Carnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in the sunshine', 'Toys that are not rope-based'),
+    new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud Noises', 'http://elelur.com/data_images/mammals/arctic-fox/arctic-fox-02.jpg'),
+    new Animal('Ocelot', 'Prince', 4, 'Carnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in the sunshine', 'Toys that are not rope-based', 'http://felid-tag.org/wp-content/uploads/2014/03/ocelot2-Dan-Bodenstein1.jpg'),
   ];
   selectedAnimal: Animal = null;
 
