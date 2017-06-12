@@ -20,6 +20,7 @@ import { Animal } from './animal.model';
     </select>
     <br>
     <br>
+
     <div class="row">
       <div class="col-md-3" *ngFor="let currentAnimal of childAnimalList | animalAge:filterByAnimalAge | animalDiet:filterByAnimalDiet">
       <div class="animal-table">
